@@ -1,7 +1,7 @@
 import cv2 as cv 
 import numpy as np
 
-### This time, we need to show the biggest one bubble
+### TARGET: show the biggest one bubble
 
 img = cv.imread("data/images/bubbles.jpg")
 cv.imshow("Not transformed", img)
