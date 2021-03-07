@@ -69,7 +69,7 @@ cv.imshow("Mask", mask)
 # We can use reshape to fix this
 # Reshape makes mask shape equal to (height, width, 1) which has the same number of dimensions as the img, so numpy can multiply them
 
-if True: # Good way, using functions
+if True: # Good way, using functions from opencv
     result = cv.bitwise_and(img, img, mask=mask)
 else: # Weird way, just to practice
     result = img * (mask != 0).reshape((img.shape[0], img.shape[1], 1))
